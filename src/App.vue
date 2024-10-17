@@ -1,6 +1,5 @@
 <script setup>
-import { RouterLink, RouterView } from "vue-router";
-import HelloWorld from "./components/HelloWorld.vue";
+import { RouterView } from "vue-router";
 </script>
 
 <template>
@@ -12,11 +11,17 @@ import HelloWorld from "./components/HelloWorld.vue";
 </template>
 
 <style scoped>
+/* header styles */
 header {
-  width: 100%;
   padding: 24px 40px 24px 40px;
 }
 
-@media (min-width: 1024px) {
+@media (max-width: 500px) {
+  header {
+    padding: 16px;
+  }
+  header img {
+    height: 40px;
+  }
 }
 </style>
